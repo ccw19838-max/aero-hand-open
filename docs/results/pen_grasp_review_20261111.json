@@ -1,0 +1,138 @@
+{
+  "reviewed_at": "2026-11-11T10:06:21.522669+08:00",
+  "run": "grasp_train_v4",
+  "task": "upright right hand, 130 mm weighted pen, active multi-finger grasp",
+  "task_mode": "grasp",
+  "truth_observations": true,
+  "training_status": "paused_for_reset_diagnostics",
+  "training_steps_at_stop": 65536,
+  "training_worker_elapsed_seconds": 1848.5906423090055,
+  "grasp_success_requirement": "Thumb plus at least two other fingers >=0.02 N; linear speed <0.03 m/s; angular speed <0.5 rad/s; uninterrupted 1 s hold; no invalid support or penetration >1 mm.",
+  "reset_position_noise_m": 1e-05,
+  "reset_angle_noise_degrees": 0.01,
+  "physics_dt": 0.002,
+  "control_dt": 0.05,
+  "code_commit_before_render_fix": "f4d20c3e84dfdafa5bd6326918c18a3e7b305094",
+  "evaluations": [
+    {
+      "checkpoint_steps": 51200,
+      "source_workspace_directory": "experiments/pen_spin/artifacts/grasp_train_v4/review_20261111_current/native_evaluation",
+      "episodes": 100,
+      "backend": "native",
+      "seed_start": 30000,
+      "seed_end": 30099,
+      "success_rate": 0.0,
+      "mean_episode_seconds": 0.11456000000000008,
+      "median_stable_seconds": 0.0,
+      "mean_return": -31.436247000489384,
+      "failure_reason_counts": {
+        "none": 0,
+        "timeout": 0,
+        "envelope": 1,
+        "lost_contact": 0,
+        "penetration": 98,
+        "support": 1,
+        "nonfinite": 0
+      },
+      "episodes_with_thumb_plus_two_contacts": 0,
+      "longest_stable_seconds_at_control_boundaries": 0.0,
+      "maximum_contact_fingers": 3,
+      "peak_per_finger_normal_force_n": 2.3886618614196777
+    },
+    {
+      "checkpoint_steps": 51200,
+      "source_workspace_directory": "experiments/pen_spin/artifacts/grasp_train_v4/review_20261111_current/mjx_crosscheck",
+      "episodes": 20,
+      "backend": "mjx",
+      "seed_start": 30000,
+      "seed_end": 30019,
+      "success_rate": 0.0,
+      "mean_episode_seconds": 0.03410000205039978,
+      "median_stable_seconds": 0.0,
+      "mean_return": -29.748579883575438,
+      "failure_reason_counts": {
+        "none": 0,
+        "timeout": 0,
+        "envelope": 0,
+        "lost_contact": 0,
+        "penetration": 20,
+        "support": 0,
+        "nonfinite": 0
+      },
+      "episodes_with_thumb_plus_two_contacts": 0,
+      "longest_stable_seconds_at_control_boundaries": 0.0,
+      "maximum_contact_fingers": 3,
+      "peak_per_finger_normal_force_n": 1.456437587738037
+    },
+    {
+      "checkpoint_steps": 65536,
+      "source_workspace_directory": "experiments/pen_spin/artifacts/grasp_train_v4/review_20261111_current/stopped_evaluation",
+      "episodes": 100,
+      "backend": "native",
+      "seed_start": 10000,
+      "seed_end": 10099,
+      "success_rate": 0.0,
+      "mean_episode_seconds": 0.11834000000000008,
+      "median_stable_seconds": 0.0,
+      "mean_return": -30.997328713196328,
+      "failure_reason_counts": {
+        "none": 0,
+        "timeout": 0,
+        "envelope": 12,
+        "lost_contact": 0,
+        "penetration": 88,
+        "support": 0,
+        "nonfinite": 0
+      },
+      "episodes_with_thumb_plus_two_contacts": 0,
+      "longest_stable_seconds_at_control_boundaries": 0.0,
+      "maximum_contact_fingers": 3,
+      "peak_per_finger_normal_force_n": 2.393979787826538
+    }
+  ],
+  "fixed_target_control": {
+    "native": {
+      "episodes": 20,
+      "mean_episode_seconds": 0.3533000000000003,
+      "failure_codes": [
+        4
+      ]
+    },
+    "mjx": {
+      "episodes": 20,
+      "mean_episode_seconds": 0.036000002175569534,
+      "failure_codes": [
+        2
+      ]
+    },
+    "initial_actor_max_abs_difference": 8.940696716308594e-08
+  },
+  "failure_codes": {
+    "1": "invalid_support",
+    "2": "penetration",
+    "3": "lost_contact",
+    "4": "envelope",
+    "5": "timeout",
+    "6": "nonfinite"
+  },
+  "stopped_checkpoint_sha256": "8eaa444fdcb5e4b323c1f8e66e82139871671b6b78abdea1d472e17af978ae54",
+  "limitations": [
+    "Very narrow reset perturbations; no hardware robustness claim.",
+    "Native and MJX failure timings disagree; root cause remains unresolved.",
+    "51,200-step and 65,536-step native tests use different seeds; failure category changes are not evidence of improvement.",
+    "No full spin task was reached or assessed."
+  ],
+  "latest_video": {
+    "seconds": 30.0,
+    "frames": 600,
+    "fps": 20.0,
+    "episodes": 236,
+    "integrated_physics_seconds": 30.00000000000029,
+    "backend": "native",
+    "resets_labelled": true,
+    "frames_are_actual_simulated_control_steps": true,
+    "terminal_remainder_policy": "Continue physics on video copy to control boundary; task metrics freeze at terminal event",
+    "task_success_not_implied_by_video_completion": true,
+    "annotated_workspace_path": "experiments/pen_spin/artifacts/grasp_train_v4/review_20261111_current/grasp_65536_steps_30s.mp4"
+  }
+}

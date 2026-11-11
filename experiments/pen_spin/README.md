@@ -21,6 +21,8 @@ export LIBGL_ALWAYS_SOFTWARE=1
 
 `PEN_PYTHON` 选择已有虚拟环境；`JAX_PLATFORMS` 固定 CPU。后三项供无桌面回放使用 EGL 与软件渲染，训练本身不渲染。模块为 JAX、Matplotlib、XDG 与 Mesa 缓存设置仓库内默认可写目录 `experiments/pen_spin/artifacts/cache/`；已有环境变量优先。
 
+未设置 `DISPLAY` / `WAYLAND_DISPLAY` 时，模块会在导入 MuJoCo 前设置上述 EGL 默认值，以支持训练结束后的自动录像；显式设置的渲染环境变量仍优先。仅在录像函数内部设置后端为时已晚，可能导致无桌面机器的 GLFW 初始化失败。
+
 检查依赖与子模块：
 
 ```bash
