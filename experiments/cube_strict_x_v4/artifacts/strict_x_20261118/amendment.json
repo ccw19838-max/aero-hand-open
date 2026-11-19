@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-11-18T05:49:46.462295+00:00",
+  "job_sha256": "8a1892767903531073a11708e497ecc6143a9a20646474529e429e62350c1d38",
+  "deadline_at": "2026-11-19T02:55:48.028671+00:00",
+  "curriculum_degrees": [
+    30,
+    60,
+    90
+  ],
+  "previous_curriculum_degrees": [
+    5,
+    10,
+    20,
+    30,
+    45,
+    60,
+    75,
+    90
+  ],
+  "previous_stage": 10,
+  "checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v4/checkpoints/step_001630208_7b078c2b2d",
+  "policy_sha256": "e3d792e9598cdde709b61cfddb94898fbf78197ce9c89b71f1c96a69e9feb80c",
+  "training_steps": 1630208,
+  "ppo_training_epochs": 6368,
+  "previous_state": "state_before_30_60_90.json",
+  "previous_state_sha256": "cbd847cddcaf26a1216340e57e22ff6bd58644fb43e38bf62beab7a5dfcdfc4b"
+}

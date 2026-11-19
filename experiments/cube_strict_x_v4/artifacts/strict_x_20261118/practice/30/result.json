@@ -1,0 +1,502 @@
+{
+  "schema": "preloss_support_adjustment_v1",
+  "target_degrees": 30.0,
+  "qualified": true,
+  "comparisons": [
+    {
+      "seed": 7403001,
+      "prefix_controls": 32,
+      "controls": 4,
+      "support_first": [
+        0.18,
+        0.0,
+        0.0
+      ],
+      "support_second": [
+        0.18,
+        0.0,
+        0.0
+      ],
+      "pairs": {
+        "0.002": {
+          "seconds_before_loss": 0.1499999999999999,
+          "fixed": {
+            "valid_prefix": true,
+            "fork_sha256": "be154da7b232eae9630f5e15293bc35d2ba83adace56ed8168463d057dc630a3",
+            "fork_objective_deg": 11.115656042093299,
+            "fork_signed_angle_deg": 11.429399705576786,
+            "fork_pose_error_deg": 18.8843439579067,
+            "complete": true,
+            "strict_eligible": false,
+            "full_controls": 4,
+            "strict_controls": 2,
+            "final_signed_angle_deg": 11.467145715360495,
+            "final_pose_error_deg": 18.554980307303822,
+            "final_objective_deg": 11.445019692696178,
+            "eligible_peak_deg": 11.714988243535466,
+            "first_violation": {
+              "time_s": 1.47,
+              "angle_deg": 11.685032543191042,
+              "fingers": [
+                "index"
+              ]
+            },
+            "failure_reason": "",
+            "final_displacement_m": 0.013758836299398568,
+            "max_strict_hold_s": 0.0
+          },
+          "adjusted": {
+            "valid_prefix": true,
+            "fork_sha256": "be154da7b232eae9630f5e15293bc35d2ba83adace56ed8168463d057dc630a3",
+            "fork_objective_deg": 11.115656042093299,
+            "fork_signed_angle_deg": 11.429399705576786,
+            "fork_pose_error_deg": 18.8843439579067,
+            "complete": true,
+            "strict_eligible": false,
+            "full_controls": 4,
+            "strict_controls": 2,
+            "final_signed_angle_deg": 11.44632027404713,
+            "final_pose_error_deg": 18.561271587507772,
+            "final_objective_deg": 11.438728412492228,
+            "eligible_peak_deg": 11.720662098663611,
+            "first_violation": {
+              "time_s": 1.49,
+              "angle_deg": 11.621282533729843,
+              "fingers": [
+                "index"
+              ]
+            },
+            "failure_reason": "",
+            "final_displacement_m": 0.013834253393390008,
+            "max_strict_hold_s": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7403001,
+      "prefix_controls": 32,
+      "controls": 4,
+      "support_first": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "support_second": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "pairs": {
+        "0.002": {
+          "seconds_before_loss": 0.1499999999999999,
+          "fixed": {
+            "valid_prefix": true,
+            "fork_sha256": "be154da7b232eae9630f5e15293bc35d2ba83adace56ed8168463d057dc630a3",
+            "fork_objective_deg": 11.115656042093299,
+            "fork_signed_angle_deg": 11.429399705576786,
+            "fork_pose_error_deg": 18.8843439579067,
+            "complete": true,
+            "strict_eligible": false,
+            "full_controls": 4,
+            "strict_controls": 2,
+            "final_signed_angle_deg": 11.467145715360495,
+            "final_pose_error_deg": 18.554980307303822,
+            "final_objective_deg": 11.445019692696178,
+            "eligible_peak_deg": 11.714988243535466,
+            "first_violation": {
+              "time_s": 1.47,
+              "angle_deg": 11.685032543191042,
+              "fingers": [
+                "index"
+              ]
+            },
+            "failure_reason": "",
+            "final_displacement_m": 0.013758836299398568,
+            "max_strict_hold_s": 0.0
+          },
+          "adjusted": {
+            "valid_prefix": true,
+            "fork_sha256": "be154da7b232eae9630f5e15293bc35d2ba83adace56ed8168463d057dc630a3",
+            "fork_objective_deg": 11.115656042093299,
+            "fork_signed_angle_deg": 11.429399705576786,
+            "fork_pose_error_deg": 18.8843439579067,
+            "complete": true,
+            "strict_eligible": false,
+            "full_controls": 4,
+            "strict_controls": 3,
+            "final_signed_angle_deg": 12.159303900217097,
+            "final_pose_error_deg": 17.9018132107927,
+            "final_objective_deg": 12.0981867892073,
+            "eligible_peak_deg": 12.138610315854455,
+            "first_violation": {
+              "time_s": 1.53,
+              "angle_deg": 12.158444757261991,
+              "fingers": [
+                "middle"
+              ]
+            },
+            "failure_reason": "recovered_after_violation",
+            "final_displacement_m": 0.013454262124141308,
+            "max_strict_hold_s": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7403001,
+      "prefix_controls": 32,
+      "controls": 4,
+      "support_first": [
+        0.0,
+        0.0,
+        0.18
+      ],
+      "support_second": [
+        0.0,
+        0.0,
+        0.18
+      ],
+      "pairs": {
+        "0.002": {
+          "seconds_before_loss": 0.1499999999999999,
+          "fixed": {
+            "valid_prefix": true,
+            "fork_sha256": "be154da7b232eae9630f5e15293bc35d2ba83adace56ed8168463d057dc630a3",
+            "fork_objective_deg": 11.115656042093299,
+            "fork_signed_angle_deg": 11.429399705576786,
+            "fork_pose_error_deg": 18.8843439579067,
+            "complete": true,
+            "strict_eligible": false,
+            "full_controls": 4,
+            "strict_controls": 2,
+            "final_signed_angle_deg": 11.467145715360495,
+            "final_pose_error_deg": 18.554980307303822,
+            "final_objective_deg": 11.445019692696178,
+            "eligible_peak_deg": 11.714988243535466,
+            "first_violation": {
+              "time_s": 1.47,
+              "angle_deg": 11.685032543191042,
+              "fingers": [
+                "index"
+              ]
+            },
+            "failure_reason": "",
+            "final_displacement_m": 0.013758836299398568,
+            "max_strict_hold_s": 0.0
+          },
+          "adjusted": {
+            "valid_prefix": true,
+            "fork_sha256": "be154da7b232eae9630f5e15293bc35d2ba83adace56ed8168463d057dc630a3",
+            "fork_objective_deg": 11.115656042093299,
+            "fork_signed_angle_deg": 11.429399705576786,
+            "fork_pose_error_deg": 18.8843439579067,
+            "complete": true,
+            "strict_eligible": false,
+            "full_controls": 4,
+            "strict_controls": 3,
+            "final_signed_angle_deg": 12.754759020210475,
+            "final_pose_error_deg": 17.296380983092618,
+            "final_objective_deg": 12.703619016907382,
+            "eligible_peak_deg": 12.669347114263807,
+            "first_violation": {
+              "time_s": 1.54,
+              "angle_deg": 12.723704669231719,
+              "fingers": [
+                "index"
+              ]
+            },
+            "failure_reason": "",
+            "final_displacement_m": 0.013884532155733256,
+            "max_strict_hold_s": 0.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7403001,
+      "prefix_controls": 32,
+      "controls": 4,
+      "support_first": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "support_second": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "pairs": {
+        "0.002": {
+          "seconds_before_loss": 0.1499999999999999,
+          "fixed": {
+            "valid_prefix": true,
+            "fork_sha256": "be154da7b232eae9630f5e15293bc35d2ba83adace56ed8168463d057dc630a3",
+            "fork_objective_deg": 11.115656042093299,
+            "fork_signed_angle_deg": 11.429399705576786,
+            "fork_pose_error_deg": 18.8843439579067,
+            "complete": true,
+            "strict_eligible": false,
+            "full_controls": 4,
+            "strict_controls": 2,
+            "final_signed_angle_deg": 11.467145715360495,
+            "final_pose_error_deg": 18.554980307303822,
+            "final_objective_deg": 11.445019692696178,
+            "eligible_peak_deg": 11.714988243535466,
+            "first_violation": {
+              "time_s": 1.47,
+              "angle_deg": 11.685032543191042,
+              "fingers": [
+                "index"
+              ]
+            },
+            "failure_reason": "",
+            "final_displacement_m": 0.013758836299398568,
+            "max_strict_hold_s": 0.0
+          },
+          "adjusted": {
+            "valid_prefix": true,
+            "fork_sha256": "be154da7b232eae9630f5e15293bc35d2ba83adace56ed8168463d057dc630a3",
+            "fork_objective_deg": 11.115656042093299,
+            "fork_signed_angle_deg": 11.429399705576786,
+            "fork_pose_error_deg": 18.8843439579067,
+            "complete": true,
+            "strict_eligible": true,
+            "full_controls": 4,
+            "strict_controls": 4,
+            "final_signed_angle_deg": 13.0546750457527,
+            "final_pose_error_deg": 16.99125464240661,
+            "final_objective_deg": 13.00874535759339,
+            "eligible_peak_deg": 13.0546750457527,
+            "first_violation": null,
+            "failure_reason": "",
+            "final_displacement_m": 0.013636841318867082,
+            "max_strict_hold_s": 0.0
+          }
+        },
+        "0.001": {
+          "seconds_before_loss": 0.1499999999999999,
+          "fixed": {
+            "valid_prefix": true,
+            "fork_sha256": "db144725dad4a11386449c935e52f5fcbe7703601505a879a754f6ebffc001c6",
+            "fork_objective_deg": 11.11069797475615,
+            "fork_signed_angle_deg": 11.424666056382181,
+            "fork_pose_error_deg": 18.88930202524385,
+            "complete": true,
+            "strict_eligible": false,
+            "full_controls": 4,
+            "strict_controls": 2,
+            "final_signed_angle_deg": 11.465514346298969,
+            "final_pose_error_deg": 18.556179206383202,
+            "final_objective_deg": 11.443820793616798,
+            "eligible_peak_deg": 11.712987308471963,
+            "first_violation": {
+              "time_s": 1.47,
+              "angle_deg": 11.682993370296678,
+              "fingers": [
+                "index"
+              ]
+            },
+            "failure_reason": "",
+            "final_displacement_m": 0.013754295137626934,
+            "max_strict_hold_s": 0.0
+          },
+          "adjusted": {
+            "valid_prefix": true,
+            "fork_sha256": "db144725dad4a11386449c935e52f5fcbe7703601505a879a754f6ebffc001c6",
+            "fork_objective_deg": 11.11069797475615,
+            "fork_signed_angle_deg": 11.424666056382181,
+            "fork_pose_error_deg": 18.88930202524385,
+            "complete": true,
+            "strict_eligible": true,
+            "full_controls": 4,
+            "strict_controls": 4,
+            "final_signed_angle_deg": 13.051235729239105,
+            "final_pose_error_deg": 16.995036121076755,
+            "final_objective_deg": 13.004963878923245,
+            "eligible_peak_deg": 13.051235729239105,
+            "first_violation": null,
+            "failure_reason": "",
+            "final_displacement_m": 0.013634275627472265,
+            "max_strict_hold_s": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "seeds": [
+    7403000,
+    7403001,
+    7403002,
+    7403003,
+    7403004,
+    7403005,
+    7403006,
+    7403007
+  ],
+  "reference_sha256": "12c2b6e1e0027b25d418ddf20ca83f24b6529d1dd9ae8f24bc4def340cddbcac",
+  "profile": {
+    "name": "thumb_pinky_three_support_v3",
+    "learning_rate": 0.0001,
+    "gamma": 0.999,
+    "entropy": 0.001,
+    "action_fraction": 0.02,
+    "contact_weight": 1.0,
+    "loss_weight": 1.0,
+    "loss_grace": 0.15,
+    "pressure_potential_gain": 0.5,
+    "stall_weight": 0.5,
+    "progress_gain": 20.0,
+    "grip_mix": 0.0,
+    "bc_weight": 0.0
+  },
+  "training_step": 2934784,
+  "source_traces": [
+    {
+      "seed": 7403000,
+      "nominal_actions_sha256": "5af90e8a44c44f5cb8b32576ea4c702c68f13ebcc3b8dcc2a9c1203af1ef5713",
+      "coarse_first_loss": {
+        "time_s": 1.48,
+        "angle_deg": 11.975972717359548,
+        "fingers": [
+          "index"
+        ]
+      },
+      "fine_first_loss": {
+        "time_s": 1.22,
+        "angle_deg": 10.107902653993344,
+        "fingers": [
+          "index"
+        ]
+      },
+      "matched_fork": false
+    },
+    {
+      "seed": 7403001,
+      "nominal_actions_sha256": "f8c0d6ecb5d61ff6ad79fa6f168106772a07295b520ea4ed0061b25db77e5481",
+      "coarse_first_loss": {
+        "time_s": 1.5,
+        "angle_deg": 12.389175883461364,
+        "fingers": [
+          "index"
+        ]
+      },
+      "fine_first_loss": {
+        "time_s": 1.5,
+        "angle_deg": 12.38584924410858,
+        "fingers": [
+          "index"
+        ]
+      },
+      "matched_fork": true,
+      "fork_controls": 32
+    }
+  ],
+  "source": "partial anticipatory support exercise from original initial grasp, identical open-loop drivers",
+  "seed": 7403001,
+  "verification": {
+    "0.002": {
+      "seconds_before_loss": 0.1499999999999999,
+      "fixed": {
+        "valid_prefix": true,
+        "fork_sha256": "be154da7b232eae9630f5e15293bc35d2ba83adace56ed8168463d057dc630a3",
+        "fork_objective_deg": 11.115656042093299,
+        "fork_signed_angle_deg": 11.429399705576786,
+        "fork_pose_error_deg": 18.8843439579067,
+        "complete": true,
+        "strict_eligible": false,
+        "full_controls": 4,
+        "strict_controls": 2,
+        "final_signed_angle_deg": 11.467145715360495,
+        "final_pose_error_deg": 18.554980307303822,
+        "final_objective_deg": 11.445019692696178,
+        "eligible_peak_deg": 11.714988243535466,
+        "first_violation": {
+          "time_s": 1.47,
+          "angle_deg": 11.685032543191042,
+          "fingers": [
+            "index"
+          ]
+        },
+        "failure_reason": "",
+        "final_displacement_m": 0.013758836299398568,
+        "max_strict_hold_s": 0.0
+      },
+      "adjusted": {
+        "valid_prefix": true,
+        "fork_sha256": "be154da7b232eae9630f5e15293bc35d2ba83adace56ed8168463d057dc630a3",
+        "fork_objective_deg": 11.115656042093299,
+        "fork_signed_angle_deg": 11.429399705576786,
+        "fork_pose_error_deg": 18.8843439579067,
+        "complete": true,
+        "strict_eligible": true,
+        "full_controls": 4,
+        "strict_controls": 4,
+        "final_signed_angle_deg": 13.0546750457527,
+        "final_pose_error_deg": 16.99125464240661,
+        "final_objective_deg": 13.00874535759339,
+        "eligible_peak_deg": 13.0546750457527,
+        "first_violation": null,
+        "failure_reason": "",
+        "final_displacement_m": 0.013636841318867082,
+        "max_strict_hold_s": 0.0
+      }
+    },
+    "0.001": {
+      "seconds_before_loss": 0.1499999999999999,
+      "fixed": {
+        "valid_prefix": true,
+        "fork_sha256": "db144725dad4a11386449c935e52f5fcbe7703601505a879a754f6ebffc001c6",
+        "fork_objective_deg": 11.11069797475615,
+        "fork_signed_angle_deg": 11.424666056382181,
+        "fork_pose_error_deg": 18.88930202524385,
+        "complete": true,
+        "strict_eligible": false,
+        "full_controls": 4,
+        "strict_controls": 2,
+        "final_signed_angle_deg": 11.465514346298969,
+        "final_pose_error_deg": 18.556179206383202,
+        "final_objective_deg": 11.443820793616798,
+        "eligible_peak_deg": 11.712987308471963,
+        "first_violation": {
+          "time_s": 1.47,
+          "angle_deg": 11.682993370296678,
+          "fingers": [
+            "index"
+          ]
+        },
+        "failure_reason": "",
+        "final_displacement_m": 0.013754295137626934,
+        "max_strict_hold_s": 0.0
+      },
+      "adjusted": {
+        "valid_prefix": true,
+        "fork_sha256": "db144725dad4a11386449c935e52f5fcbe7703601505a879a754f6ebffc001c6",
+        "fork_objective_deg": 11.11069797475615,
+        "fork_signed_angle_deg": 11.424666056382181,
+        "fork_pose_error_deg": 18.88930202524385,
+        "complete": true,
+        "strict_eligible": true,
+        "full_controls": 4,
+        "strict_controls": 4,
+        "final_signed_angle_deg": 13.051235729239105,
+        "final_pose_error_deg": 16.995036121076755,
+        "final_objective_deg": 13.004963878923245,
+        "eligible_peak_deg": 13.051235729239105,
+        "first_violation": null,
+        "failure_reason": "",
+        "final_displacement_m": 0.013634275627472265,
+        "max_strict_hold_s": 0.0
+      }
+    }
+  },
+  "npz_sha256": "16f71e2c74ba1bd60d6f63591dcf5d5b73cbd273f8e0157915c30fc8ba6a1322",
+  "implementation_sha256": "ef27067475db2517928483ccdc92d0803c3125920204bff4ccdac46a6fa96d2f",
+  "observation_order_dt": [
+    0.002,
+    0.001
+  ],
+  "prefix_controls": 32,
+  "segment_controls": 4
+}

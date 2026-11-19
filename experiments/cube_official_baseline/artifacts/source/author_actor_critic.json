@@ -1,0 +1,14 @@
+{
+  "source_weights": "/workspace/aero-hand-open/ros2/src/aero_hand_open_rl/aero_hand_open_rl/ppo_TetheriaCubeRotateZAxisTendon_20250926_152920",
+  "source_sha256": "5d54202f461fc025a075b8712c55a2daf16b780eb61825dea290613149fd04f3",
+  "converted_sha256": "7cfae27be5171c9b5e93cc3e8d2a04facd414426b3cda6080066246d5fe1cd65",
+  "actor_observations": 14,
+  "critic_observations": 81,
+  "hidden_layers": [
+    512,
+    256,
+    128
+  ],
+  "deterministic_test_observations": 64,
+  "stochastic_distribution_restored": false
+}

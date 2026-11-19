@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/openai/robogym",
+  "commit": "9ff1111fd557b1a01911d7d8c9d59a453071c96e",
+  "paths": [
+    "README.md",
+    "robogym/envs/dactyl/locked.py",
+    "robogym/envs/dactyl/common/cube_env.py",
+    "robogym/envs/dactyl/goals/locked_parallel.py",
+    "robogym/wrappers/dactyl.py"
+  ]
+}

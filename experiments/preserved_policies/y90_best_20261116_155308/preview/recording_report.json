@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-11-16T06:32:11.935930+00:00",
+  "video": "y_best_policy.mp4",
+  "seconds": 24.05,
+  "fps": 20,
+  "frames": 481,
+  "width": 1280,
+  "height": 800,
+  "sha256": "debdc44c7586699a5c13e511e8aa84c0720c06d16c0cd11c2bd8fc91d28b84a3",
+  "checkpoint": "/workspace/aero-hand-open/experiments/cube_adaptive_60h/artifacts/goal_20261113_1536/y/segment_006/checkpoints/step_000589824_8b295922",
+  "training_steps": 589824,
+  "selection": "Best protected Y90 checkpoint by aggregate evaluation; its example with the smallest best full-pose error",
+  "seed": 1000007,
+  "physical_dt": 0.001,
+  "final": {
+    "axis": "y",
+    "goal_degrees": 90.0,
+    "axis_frame": "fixed_cube_face_axes_at_initial_grasp",
+    "axis_world_vector": [
+      0.5963708035740185,
+      0.7578625399843778,
+      -0.26454911667383607
+    ],
+    "goal_quaternion": [
+      0.03171025976263538,
+      -0.32265013953644484,
+      -0.9369769097571056,
+      0.13025213036616276
+    ],
+    "phase": "capture",
+    "elapsed_seconds": 4.228999999999747,
+    "goal_elapsed_seconds": 3.9699999999999593,
+    "success": false,
+    "is_success": false,
+    "failure_reason": "forbidden_support",
+    "angle_error_degrees": 3.400984410369136,
+    "best_angle_error_degrees": 3.3335522416199304,
+    "signed_progress_degrees": 89.95461444589189,
+    "max_progress_degrees": 89.95461444589189,
+    "stable_seconds": 0.0,
+    "max_stable_seconds": 0.0,
+    "finger_forces": [
+      33.319846279869,
+      0.0,
+      0.0,
+      8.450760747221487,
+      7.006049005219365
+    ],
+    "finger_contacts": 3,
+    "hand_force": 55.145807247760374,
+    "linear_speed": 0.022505162023257766,
+    "angular_speed": 0.33168699915218997,
+    "displacement": 0.023071925438294897,
+    "milestones": [],
+    "cube_layers_locked": true,
+    "reset_mode": "prepared_reference_24_orientations",
+    "task": "adaptive_xy_60h_v1",
+    "stagnation_seconds": 0.09999999999999999,
+    "actor_inputs": 143,
+    "action_mapping": "incremental motor target, at most 2% range/cycle",
+    "physical_dt": 0.001,
+    "action_history": "previous applied control action a(t-1)",
+    "grip_stable_seconds": 0.0,
+    "final_goal_degrees": 90.0,
+    "curriculum_complete": true,
+    "five_finger_contact": false,
+    "rotation_support": true,
+    "contact_coverage": 0.6,
+    "all_five_stable_seconds": 0.0,
+    "max_all_five_stable_seconds": 0.2800000000000001,
+    "five_finger_duty": 0.14609571788413256,
+    "insufficient_contact_seconds": 0.0,
+    "applied_randomization": 0.0,
+    "control_cycle_min_finger_forces": [
+      33.319846279869,
+      0.0,
+      0.0,
+      8.450760747221487,
+      7.006049005219365
+    ],
+    "control_cycle_max_finger_forces": [
+      33.603250541747485,
+      0.0,
+      0.0,
+      8.552748213113297,
+      7.139052384144459
+    ],
+    "stage_target_degrees": 90.0,
+    "training_grip_mix": false,
+    "contact_loss_seconds": [
+      0.0,
+      0.34000000000000014,
+      0.7300000000000004,
+      0.0,
+      0.0
+    ],
+    "maximum_contact_loss_seconds": [
+      0.0,
+      0.34000000000000014,
+      1.7500000000000013,
+      0.0,
+      0.7000000000000004
+    ],
+    "recovery_penalty": -1.1715189370188954,
+    "stall_penalty": 0.0,
+    "applied_action": [
+      0.007788446731865406,
+      0.2376684695482254,
+      -0.3458320200443268,
+      -0.4696478247642517,
+      0.36643218994140625,
+      0.5624779462814331,
+      -0.7061023116111755
+    ],
+    "motor_targets": [
+      0.06745213199729361,
+      0.08329020865841553,
+      0.06798205727882699,
+      0.07008407756517229,
+      1.75,
+      0.038389,
+      0.081568
+    ]
+  },
+  "terminal_support": [
+    {
+      "geom": "tetheria_mount_collision_0",
+      "normal_force_N": 3.513819604445841
+    }
+  ],
+  "saved_validation_reproduced": true,
+  "segments": [
+    {
+      "label": "\u521d\u59cb\u72b6\u6001 \u00b7 \u9759\u5e27",
+      "start_seconds": 0.0,
+      "speed": 0.0
+    },
+    {
+      "label": "\u539f\u901f 1\u00d7",
+      "start_seconds": 0.5,
+      "speed": 1.0
+    },
+    {
+      "label": "\u5931\u8d25\u7ec8\u70b9 \u00b7 \u9759\u5e27",
+      "start_seconds": 4.75,
+      "speed": 0.0
+    },
+    {
+      "label": "\u540c\u4e00\u52a8\u4f5c\u91cd\u65b0\u6162\u653e",
+      "start_seconds": 5.55,
+      "speed": 0.0
+    },
+    {
+      "label": "\u540c\u4e00\u52a8\u4f5c \u00b7 0.25\u00d7",
+      "start_seconds": 6.05,
+      "speed": 0.25
+    },
+    {
+      "label": "\u7ec8\u70b9\u9759\u5e27 \u00b7 \u975e\u4fdd\u6301",
+      "start_seconds": 23.05,
+      "speed": 0.0
+    }
+  ],
+  "note": "One complete failed native neural-policy attempt. Slow replay repeats the same attempt; static frames do not advance physics or hold time. No training was restarted.",
+  "elapsed_wall_seconds": 51.03922182399947
+}

@@ -1,0 +1,184 @@
+{
+  "seed": 8102011,
+  "dt": 0.002,
+  "success": false,
+  "interrupted": false,
+  "final": {
+    "axis": "x",
+    "goal_degrees": 30.0,
+    "axis_frame": "fixed_cube_face_axes_at_initial_grasp",
+    "axis_world_vector": [
+      0.7899654233340345,
+      -0.6126657381347419,
+      0.024399246965659677
+    ],
+    "goal_quaternion": [
+      0.6613602073973892,
+      -0.5971140409004171,
+      -0.39453066502162387,
+      0.22450624175833636
+    ],
+    "phase": "capture",
+    "elapsed_seconds": 1.5400000000000011,
+    "goal_elapsed_seconds": 1.290000000000001,
+    "success": false,
+    "is_success": false,
+    "failure_reason": "recovered_after_violation",
+    "angle_error_degrees": 9.679816501111372,
+    "best_angle_error_degrees": 9.574290303145576,
+    "signed_progress_degrees": 21.449672653824248,
+    "max_progress_degrees": 21.57956100375565,
+    "stable_seconds": 0.0,
+    "max_stable_seconds": 0.0,
+    "finger_forces": [
+      3.796409225384288,
+      0.9770543651450792,
+      0.4692286374112297,
+      3.094237190909065,
+      0.6745320586141795
+    ],
+    "finger_contacts": 5,
+    "hand_force": 9.74609972410055,
+    "linear_speed": 0.00955479887907982,
+    "angular_speed": 0.2695821809892006,
+    "displacement": 0.01048232661744873,
+    "milestones": [],
+    "cube_layers_locked": true,
+    "reset_mode": "prepared_reference_24_orientations",
+    "task": "x_strict_three_support_v4",
+    "stagnation_seconds": 0.08,
+    "actor_inputs": 149,
+    "action_mapping": "incremental motor target, at most 2% range/cycle",
+    "physical_dt": 0.002,
+    "action_history": "previous applied control action a(t-1)",
+    "grip_stable_seconds": 0.01,
+    "final_goal_degrees": 90.0,
+    "curriculum_complete": false,
+    "five_finger_contact": true,
+    "rotation_support": true,
+    "contact_coverage": 1.0,
+    "all_five_stable_seconds": 0.01,
+    "max_all_five_stable_seconds": 0.3000000000000001,
+    "five_finger_duty": 0.3720930232558139,
+    "insufficient_contact_seconds": 0.0,
+    "applied_randomization": 0.0,
+    "control_cycle_min_finger_forces": [
+      3.751706434602198,
+      0.9770543651450792,
+      0.0,
+      3.094237190909065,
+      0.0
+    ],
+    "control_cycle_max_finger_forces": [
+      4.161968595553244,
+      1.160242458312505,
+      0.4692286374112297,
+      3.43777783796146,
+      0.7869168048727323
+    ],
+    "stage_target_degrees": 30.0,
+    "training_grip_mix": false,
+    "contact_loss_seconds": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "maximum_contact_loss_seconds": [
+      0.0,
+      0.0,
+      0.01,
+      0.0,
+      0.8000000000000005
+    ],
+    "recovery_penalty": -0.20490000000000005,
+    "stall_penalty": 0.0,
+    "environment_version": "x_strict_three_support_v4",
+    "control_mode": "capture",
+    "auxiliary_requested": false,
+    "training_prefix_used": false,
+    "prefix_index": null,
+    "auxiliary_setup_failure": "",
+    "prefix_start_angle_degrees": 0.0,
+    "evaluation_kind": "original_grasp_named_finger_roles",
+    "from_original_initial_grasp": true,
+    "three_support": true,
+    "three_support_duty": 0.9922480620155039,
+    "three_support_missing_seconds": 0.0,
+    "max_three_support_missing_seconds": 0.01,
+    "supported_progress_degrees": 21.57444511875494,
+    "driver_moments_Nm": [
+      0.02488460220216529,
+      -0.021131623819383376
+    ],
+    "driver_tangential_speeds_m_s": [
+      -0.0004982416557805945,
+      -0.020283522150210044
+    ],
+    "dual_driver_bonus": 2.2728608150130274,
+    "three_support_penalty": -0.12,
+    "tolerance_degrees": 5.0,
+    "eligible_peak_degrees": 21.57444511875494,
+    "first_violation": {
+      "time_s": 1.28,
+      "angle_deg": 21.552846114626263,
+      "fingers": [
+        "middle"
+      ]
+    },
+    "warning_count": 0,
+    "warning_false_count": 0,
+    "warning_censored_count": 0,
+    "warning_lead_ms": [],
+    "force_margins": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "support_warnings": [
+      false,
+      false,
+      false
+    ],
+    "strict_hold_seconds": 0.0,
+    "max_strict_hold_seconds": 0.0,
+    "legacy_sampled_supported_peak_degrees": 21.57444511875494,
+    "strict_success": false,
+    "observation_version": "v3_143_plus_index_middle_ring_margin_then_warning",
+    "normalized_progress_return": 13.617139797902952,
+    "applied_action": [
+      0.018319396302103996,
+      0.1336512565612793,
+      0.23289501667022705,
+      -0.3749059736728668,
+      0.22863651812076569,
+      -0.9858242273330688,
+      0.9661007523536682
+    ],
+    "motor_targets": [
+      0.0767338798965754,
+      0.08156462068042585,
+      0.07792966462308915,
+      0.07104859966877741,
+      1.2077985413365955,
+      0.03597776263072728,
+      0.112138
+    ],
+    "training_reward_transform": "narrow_small_angle_mount_margin_v1",
+    "mount_clearance_m": 0.014708047106575207,
+    "mount_proximity_penalty": 0.0,
+    "mount_proximity_penalty_total": 0.10000000000000009,
+    "raw_task_reward": 0.5931650710016481,
+    "raw_task_return": 14.53973451084933,
+    "driver_push_impulse_Nm_s": {
+      "thumb": 0.07273740828189762,
+      "pinky": 0.001557991056759234
+    },
+    "driver_counter_impulse_Nm_s": {
+      "thumb": 0.0,
+      "pinky": 0.0030542832205304633
+    }
+  },
+  "policy_sha256": "9e1f69df16b5afd1852ebcb1f2e0a2c29292991e0c22141559773e283731568f"
+}

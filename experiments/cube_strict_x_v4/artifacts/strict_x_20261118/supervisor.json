@@ -1,0 +1,27 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "trainer_pid": 3028,
+      "log": "logs/trainer_001.log",
+      "started_at": "2026-11-18T03:10:25.821002+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-18T05:47:30.377802+00:00"
+    },
+    {
+      "attempt": 2,
+      "trainer_pid": 15865,
+      "log": "logs/trainer_002.log",
+      "started_at": "2026-11-18T05:49:58.315055+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-19T00:56:22.055479+00:00"
+    }
+  ],
+  "failures": 0,
+  "pid": 15864,
+  "trainer_pid": null,
+  "deadline_at": "2026-11-19T02:55:48.028671+00:00",
+  "supervisor_started_at": "2026-11-18T05:49:58.314262+00:00",
+  "status": "completed",
+  "finished_at": "2026-11-19T00:56:22.058563+00:00"
+}

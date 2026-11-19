@@ -1,0 +1,26 @@
+{
+  "archive_sha256": "408f3b122e0497eb2ffdfe5c8ca2b50c8d5debf234c40167ed6fa7cd9d6ab4b2",
+  "archive_size_bytes": 150971791,
+  "schema": "aero-hand-gpu-handoff/v1",
+  "all_file_hashes_verified": true,
+  "forbade_original_checkout_access": true,
+  "physics_smoke": "native MuJoCo CPU",
+  "ppo_device_tested": "cpu",
+  "permanent_checkpoint_roles": [
+    "x_latest",
+    "x_best",
+    "y_best"
+  ],
+  "verified_step_sequence": [
+    15213568,
+    15214592,
+    15215616
+  ],
+  "verified_ppo_epochs": [
+    59428,
+    59432,
+    59436
+  ],
+  "v4_test_discovery": "passed",
+  "cuda_execution": "not available here"
+}

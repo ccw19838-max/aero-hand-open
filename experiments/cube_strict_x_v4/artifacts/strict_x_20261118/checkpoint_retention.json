@@ -1,0 +1,34 @@
+{
+  "checkpoint_dirs_before": 2906,
+  "removed_dirs": 2903,
+  "removed_file_bytes": 15679784659,
+  "by_experiment": {
+    "cube_adaptive_60h": 1747,
+    "cube_contact_ppo": 109,
+    "cube_contact_recovery_v2": 27,
+    "cube_envelop": 24,
+    "cube_envelop_gradual": 463,
+    "cube_grasp": 11,
+    "cube_official_baseline": 88,
+    "cube_quarter_turn": 35,
+    "cube_reorient": 6,
+    "cube_strict_x_v4": 314,
+    "cube_two_driver_v3": 1,
+    "cube_z90": 73,
+    "pen_spin": 5
+  },
+  "removed_obsolete_links": 133,
+  "kept": [
+    "experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v4/checkpoints/step_015213568_062844e2a7",
+    "experiments/cube_strict_x_v4/artifacts/strict_x_20261118/final/checkpoints/challenge_30",
+    "experiments/preserved_policies/y90_best_20261116_155308/checkpoint"
+  ],
+  "equivalent_legacy_aliases": {
+    "experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v4/checkpoints/step_012984320_b2eaca3037": "experiments/cube_strict_x_v4/artifacts/strict_x_20261118/final/checkpoints/challenge_30",
+    "experiments/cube_adaptive_60h/artifacts/goal_20261113_1536/y/segment_006/checkpoints/step_000589824_8b295922": "experiments/preserved_policies/y90_best_20261116_155308/checkpoint"
+  },
+  "author_reference": [
+    "experiments/cube_official_baseline/artifacts/source/author_actor_critic.npz",
+    "ros2/src/aero_hand_open_rl/aero_hand_open_rl/ppo_TetheriaCubeRotateZAxisTendon_20250926_152920"
+  ]
+}

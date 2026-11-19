@@ -1,0 +1,278 @@
+{
+  "acceptance": {
+    "action_dims": 7,
+    "angular_speed_strictly_below_rad_s": 0.5,
+    "axis": "Positive initial cube-face X, aligned to mount after warmup; moment arms originate at the moving cube COM.",
+    "control_period_s": 0.05,
+    "cube_edge_m": 0.057,
+    "curriculum_deg": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      60,
+      75,
+      90
+    ],
+    "environment_version": "x_strict_three_support_v4",
+    "episode_timeout_s_after_warmup": 12,
+    "finger_order": [
+      "thumb",
+      "index",
+      "middle",
+      "ring",
+      "pinky"
+    ],
+    "forbidden_support_terminates_immediately": true,
+    "hold_requires": "Signed angle error and full 3D error each within tolerance; all five raw forces in bounds; unbroken eligible hold.",
+    "hold_s": 1.0,
+    "insufficient_rotation_support_grace_s": 0.15,
+    "linear_speed_strictly_below_m_s": 0.03,
+    "lower_N": [
+      0.2,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "max_displacement_m": 0.08,
+    "max_motor_target_increment_fraction": 0.02,
+    "max_penetration_m": 0.001,
+    "max_unsupported_s": 0.2,
+    "min_total_hand_force_N": 0.02,
+    "mount_deg": 20,
+    "penetration_or_workspace_grace_s": 0.1,
+    "physics_step_per_worker_s": [
+      0.001,
+      0.002,
+      0.001,
+      0.002
+    ],
+    "stagnation_s": 8,
+    "tolerance_deg": "min(5, goal/4)",
+    "upper_N": [
+      20,
+      12,
+      12,
+      12,
+      12
+    ],
+    "warmup_s": 0.25
+  },
+  "clock_utc": [
+    "2026-11-18T02:55:48.028671+00:00",
+    "2026-11-19T02:55:48.028671+00:00"
+  ],
+  "job_sha256": "8a1892767903531073a11708e497ecc6143a9a20646474529e429e62350c1d38",
+  "observations": {
+    "appended_order": [
+      "index_margin",
+      "middle_margin",
+      "ring_margin",
+      "index_warning",
+      "middle_warning",
+      "ring_warning"
+    ],
+    "dims": {
+      "v3": 143,
+      "v4": 149
+    },
+    "dtype": "float32",
+    "force_predictor": {
+      "clear": "Current force >=0.2 N and prediction >=0.1 N for five consecutive samples.",
+      "history_samples": 6,
+      "lookback_ms": 50,
+      "margin": "clip((predicted_force_N - 0.1)/0.1, -1, 1)",
+      "prediction_N": "2 * current_force_N - force_50ms_ago_N; use current force until history is full.",
+      "prediction_horizon_ms": 50,
+      "sample_ms": 10,
+      "scoring": "Raw forces determine eligibility. For warning statistics a low-force crossing within 50 ms is a hit; pending onsets at termination are censored.",
+      "warn": "Full history and current force <0.3 N and prediction <0.1 N on two consecutive samples."
+    },
+    "prefix": "Unchanged V3 features including previous applied action.",
+    "version": "v3_143_plus_index_middle_ring_margin_then_warning"
+  },
+  "preserved_y": {
+    "files_sha256": {
+      "metadata.json": "3adbc4657465c5bfd8e260f19920a3b44610fc12ee640046c162332f0026f5af",
+      "policy.zip": "38008212c7efa15a2aef0ec0eb1f983cddde5ba910f5c752442a38693f97f19e",
+      "prepare_report.json": "adf4d60e824e895c9b14464801a98d8ac64fcb8c25cd3ac2d37523442e6a7396",
+      "reference.npz": "12c2b6e1e0027b25d418ddf20ca83f24b6529d1dd9ae8f24bc4def340cddbcac",
+      "reward_normalizer.pkl": "3410d8c376e55dccf546e87f51ab40f3c2e307e5171adb741b9af9ae52726ed2"
+    },
+    "manifest": "/workspace/aero-hand-open/experiments/preserved_policies/y90_best_20261116_155308/manifest.json",
+    "manifest_sha256": "9b3c36cef33168a173093b43d0adeb0174618405b902908d8c50a3e7f52f565f",
+    "original_source": "/workspace/aero-hand-open/experiments/cube_adaptive_60h/artifacts/goal_20261113_1536/y/segment_006/checkpoints/step_000589824_8b295922",
+    "preserved_checkpoint": "/workspace/aero-hand-open/experiments/preserved_policies/y90_best_20261116_155308/checkpoint",
+    "steps": 589824,
+    "training_allocation": 0
+  },
+  "reward": {
+    "after_first_violation": {
+      "control_cycle": "Action slew and mount proximity penalties are cancelled on cycles ending after violation. Earlier valid samples in the same cycle retain their rewards.",
+      "learning_signal": "Only support potential change and three-finger deficit cost inside recovery. Stop on recovery, expiry or inherited failure. Unrecovered termination costs 20.",
+      "recovery_window_s": 0.15,
+      "success_eligible": false
+    },
+    "cap_scope": "Each reset starts a fresh episode at one curriculum goal. The 20 and 8 point caps apply separately per episode; there is no cross-episode stage pool or whole-return cap.",
+    "driver": {
+      "active": "Requires a new eligible progress increment and all five forces at or below upper limits. Each driver must meet its own minimum to contribute.",
+      "credit": "8 * eligible_fraction_gain * (0.5 * mean(qualities) + 0.5 * min(qualities)) * warning_factor",
+      "episode_cap": 8,
+      "fingers": [
+        "thumb",
+        "pinky"
+      ],
+      "quality_per_driver": "clip(axis_moment/0.005, 0, 1) * clip(tangential_speed/0.005, 0, 1)",
+      "tangential_speed_scale_m_s": 0.005,
+      "torque_scale_Nm": 0.005,
+      "warning_factor_if_any": 0.5,
+      "warning_factor_otherwise": 1.0
+    },
+    "other_eligible_terms": {
+      "action_slew": "-0.01*mean((applied_action-previous_applied_action)^2) per control cycle",
+      "capture_hold_rate": "-mean(five_finger_fractional_deficit^2) during capture (3D error <=20 deg) or hold",
+      "coverage": "mean(clip(force/lower_limit, 0, 1)) over five fingers",
+      "coverage_change_weight": 2,
+      "excess_force_rate": "-0.2*mean((max(force-upper_limit,0)/upper_limit)^2)",
+      "failure_cost": 20,
+      "five_finger_deficit_rate_weight": -1.0,
+      "hold_potential": "20 * change_in_unbroken_hold_seconds / 1.0",
+      "motion_rate": "-0.05*min(off_axis_angular_speed^2,100) - 0.1*min((linear_speed/0.1)^2,25)",
+      "mount_proximity_training_only": "-elapsed_s * 2 * clip((0.005 - clearance_m)/0.005,0,2)^2",
+      "near_goal_rate": "2*exp(-(3D_error/tolerance)^2)*coverage^2 for positive goals with valid rotation support and three named fingers",
+      "overdue": "mean(clip(seconds_below_lower_limit - grace_s, 0, 1))",
+      "overdue_grace_s": 0.15,
+      "per_finger_overdue_rate_weight": -1.0,
+      "pressure": "Reward change in gain * mean(clip(force/saturation,0,1)), starting at the second sample.",
+      "pressure_potential_gain": 0.5,
+      "pressure_saturation_N": [
+        1,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "rotation_support": "Thumb and at least two others reach their lower limits.",
+      "stall_rate": "-stall_weight * clip((stagnation_seconds - 0.5)/4,0,1)",
+      "stall_weight": 0.5,
+      "success_bonus": 50,
+      "time_rate": "-1 - 2*(3D_error_deg/90)^2 + 0.5*coverage",
+      "tip_rate": "0.25*mean(exp(-(max(tip_gap_m,0)/0.02)^2)) with valid rotation support"
+    },
+    "progress": {
+      "credit": "20 * positive increase above the episode high-water mark. Requires eligibility, increasing signed angle and decreasing 3D error.",
+      "episode_cap": 20,
+      "fraction": "clip(min(signed_angle/goal, 1 - full_pose_error/goal), 0, 1)",
+      "high_water": "Updated every active sample, including ineligible ones. Reversing then regaining the same angle earns no extra credit.",
+      "regression": "-20 * increase_in_3D_error_deg / 90, independent of positive progress credit, while eligible."
+    },
+    "support": {
+      "eligible_peak": "Maximum positive signed X angle up to but excluding the first raw-force violation, at physically valid samples.",
+      "fingers": [
+        "index",
+        "middle",
+        "ring"
+      ],
+      "first_violation_latches": true,
+      "force_range_N_inclusive": [
+        0.1,
+        12.0
+      ],
+      "sample_ms": 10
+    },
+    "support_shaping": {
+      "fraction": "clip(force_N/0.1, 0, 1)",
+      "potential": "10 * min(fraction) + 5 * mean(fraction) + 3 * mean(proximity), over the three support fingers",
+      "proximity": "exp(-(max(tip_gap_m,0)/0.02)^2)",
+      "reward": "Change in support potential after its first sample, minus dt * (12 * mean((1-fraction)^2) + 8 * max((1-fraction)^2))."
+    },
+    "units": "Raw environment rewards before PPO reward normalization. Rate terms multiply elapsed seconds."
+  },
+  "schema": "strict_x_v4_protocol_1",
+  "source_sha256_relative_to_experiments": {
+    "cube_adaptive_60h/config.py": "83d082c7dd9aba9c3ff4e5542e87eed5e44cf2a09f7154e673adec5d06da0cb8",
+    "cube_adaptive_60h/env.py": "ffcbdb2f8763c1b5306dda0f28a6ccce2d3da161d25d260e762defa01adf1faa",
+    "cube_adaptive_60h/fast_contacts.py": "231b740fd29d4522f49129fab524ac76dabe334d567f0597ee4d6d9cc14320e5",
+    "cube_adaptive_60h/native_contacts.c": "70cddc7570fa79968c702665e5d7f47715622f2d062bb45973b1605f34656718",
+    "cube_adaptive_60h/policy.py": "16d0259646983b25f2e27ced139ec88eafd9458d79ba93932671277c6ce9b6df",
+    "cube_adaptive_60h/shaping.py": "9ab329cb88c955ec95c89d922b09d45790da1ea2c85e7f76ab32117100a23e66",
+    "cube_contact_ppo/env.py": "bc176e89ed9ef6ac882d571c61a02cd8ad3a97bd757698069553c876b90ae5b6",
+    "cube_contact_ppo/task.py": "1d3c3af825ef7662c7c0dc7f6990417c78c89a1c538478f8e2bc48c2e35daba0",
+    "cube_contact_recovery_v2/env.py": "421bd64aa68936644888e840077452755745d3a946681dab6431b5ef912a92c7",
+    "cube_quarter_turn/env.py": "28716ed346b9aa35db437e8c4c2218f39fe2ec38ce67b2f4946e3757d751ef2a",
+    "cube_quarter_turn/task.py": "80830de196a6c0c5ac9d30e1c958789f7550a6ef7514709c422d34d48cb96088",
+    "cube_quarter_turn_v2/task.py": "266083b216a9d258b4c74a8a6edbe9ddcccc891e317570c3f18ecc660016d7ed",
+    "cube_strict_x_v4/contact_history.py": "4438de6f3e290450a103db86de1818354129826631d15433b1c749070d6a050a",
+    "cube_strict_x_v4/engine.py": "8c3c88498fcc704596696c8b91c8a15249bc2f689d183dfc07439d0b1bcff664",
+    "cube_strict_x_v4/env.py": "720b9d581195cdaa0d9ce034af586f53e8f2ac00ff389c2d601fb8183a1a7fb2",
+    "cube_strict_x_v4/policy.py": "53221688e88c1be8b675f5c60d1d4324490d65d402ff39ca3210d5ac9e1862a1",
+    "cube_two_driver_v3/env.py": "63478a6e419f4d6076bbb298018d5cc008b3641a985516c08adfc8ebf478cbf6",
+    "cube_two_driver_v3/roles.py": "f8a23d2fc35bf4bc1f803a0ffbfce63e98ff398976d58856b657b5e797675b31"
+  },
+  "stage_limits": {
+    "checkpoint_every_s": 300,
+    "consecutive_regular_rounds_required": 2,
+    "curriculum_time": "Unused pilot time transfers to curriculum. Stages share the time until freeze; each stage has no fixed training-hour allotment.",
+    "final_successes_required_per_step": 100,
+    "final_trials_per_step_if_90deg_qualified": 100,
+    "freeze_reserve_s": 7200,
+    "overall_wall_hours": 24,
+    "pilot_hard_stop_hours_since_start": 6,
+    "pilot_max_s_each": 7200,
+    "pilot_max_steps_each": 32768,
+    "pilot_steps_compared": [
+      0,
+      4096,
+      8192,
+      16384,
+      32768
+    ],
+    "plateau_search_max_s_once_per_stage": 600,
+    "regular_validation_every_s": 1800,
+    "successes_required_per_step": 16,
+    "validation_trials_per_physics_step": 20
+  },
+  "x_transfer": {
+    "action_mean": [
+      0.0,
+      0.0,
+      0.0,
+      0.15,
+      -0.15,
+      0.0,
+      0.0
+    ],
+    "action_std": [
+      0.04,
+      0.04,
+      0.04,
+      0.12,
+      0.12,
+      0.08,
+      0.08
+    ],
+    "axis": "x",
+    "files_sha256": {
+      "policy.zip": "060ffea0836d448efd7b4deed56caec56850e891fc6612284a52217f39f763fd",
+      "prepare_report.json": "adf4d60e824e895c9b14464801a98d8ac64fcb8c25cd3ac2d37523442e6a7396",
+      "reference.npz": "12c2b6e1e0027b25d418ddf20ca83f24b6529d1dd9ae8f24bc4def340cddbcac",
+      "reward_normalizer.pkl": "b0c9d7b85334d1cc007756a0b271aa110b398980ea1ce14513f81d4655da2034"
+    },
+    "init": "Copy legacy normalization and hidden features into both arms. Zero the value head; reinitialize identical action heads and log std. Six new V4 input columns are zero.",
+    "max_std": [
+      0.1,
+      0.1,
+      0.1,
+      0.2,
+      0.2,
+      0.15,
+      0.15
+    ],
+    "metadata_sha256": "b9f63d47090646208ab5c2cc7a7818d5db6f418459d769098b8638fad9c9c259",
+    "path": "/workspace/aero-hand-open/experiments/cube_two_driver_v3/artifacts/thumb_pinky_20261117/legacy_source",
+    "steps": 753664,
+    "task": "adaptive_xy_60h_v1"
+  }
+}

@@ -1,0 +1,12 @@
+# Install the CUDA build of torch first as described in GPU_HANDOFF.md.
+# A PEP 440 equality pin without a local suffix accepts the installed CUDA wheel.
+torch==2.6.0
+numpy==1.26.4
+mujoco==3.3.6
+gymnasium==1.1.1
+stable-baselines3==2.6.0
+cloudpickle==3.1.2
+scipy==1.15.3
+imageio==2.38.0
+imageio-ffmpeg==0.8.1
+pillow==12.3.0

@@ -6,3 +6,9 @@ build/
 .DS_Store
 
 .vscode/
+
+# Generated experiment outputs. Selected checkpoints and evaluation fixtures are tracked.
+/experiments/*/artifacts/
+/experiments/ACTIVE_EXPERIMENT.json
+/runs/
+MUJOCO_LOG.TXT

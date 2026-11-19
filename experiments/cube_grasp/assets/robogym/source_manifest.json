@@ -1,0 +1,53 @@
+{
+  "upstream_repository": "https://github.com/openai/robogym",
+  "commit": "9ff1111fd557b1a01911d7d8c9d59a453071c96e",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2020 OpenAI",
+  "selected_model": "robogym/assets/xmls/rubik/rubik_locked.xml",
+  "purpose": "Whole-object Rubik cube reorientation without internal layer rotation",
+  "edge_length_m": 0.057,
+  "density_kg_m3": 421.0,
+  "density_source": "https://github.com/openai/robogym/blob/9ff1111fd557b1a01911d7d8c9d59a453071c96e/robogym/envs/dactyl/locked.py#L85",
+  "mass_kg": 0.07796625300000001,
+  "principal_inertia_kg_m2": [
+    4.221872599950001e-05,
+    4.221872599950001e-05,
+    4.221872599950001e-05
+  ],
+  "collision": "One box, original condim=4",
+  "degrees_of_freedom": "3 slide joints plus 1 ball joint = 6 velocity DOFs; can replace with freejoint for integration",
+  "texture": "Single cube-map PNG with Rubik stickers; no mesh required",
+  "annotation": "Remove annotation:outer_bound (upstream does this too)",
+  "task_specific_modifications_to_record": [
+    "If changing edge length or mass, expose as experiment parameters rather than claim original",
+    "Set contact friction and condim explicitly for Aero environment; original asset inherits friction defaults",
+    "If separate visual/collision geoms are used, visual geom mass must be zero and non-colliding",
+    "Keep root LICENSE and source attribution alongside copied files"
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/openai/robogym/9ff1111fd557b1a01911d7d8c9d59a453071c96e/LICENSE",
+      "sha256": "271d45b4b4594ff76b6209c12e7f8d183e8d51ea9ea67e63b97238d62f37335b",
+      "bytes": 1063
+    },
+    {
+      "path": "robogym/assets/xmls/rubik/rubik_locked.xml",
+      "url": "https://raw.githubusercontent.com/openai/robogym/9ff1111fd557b1a01911d7d8c9d59a453071c96e/robogym/assets/xmls/rubik/rubik_locked.xml",
+      "sha256": "bfcd286d9f00d0df29954a5261262abb3328da04023c243152c6994238350f09",
+      "bytes": 1252
+    },
+    {
+      "path": "robogym/assets/textures/rubik/rubik.png",
+      "url": "https://raw.githubusercontent.com/openai/robogym/9ff1111fd557b1a01911d7d8c9d59a453071c96e/robogym/assets/textures/rubik/rubik.png",
+      "sha256": "d9eb6a9f5cff6f56190ac52068fb5442b5f84d88d93a4975cecd4e7afaed2403",
+      "bytes": 16712
+    },
+    {
+      "path": "robogym/envs/dactyl/locked.py",
+      "url": "https://raw.githubusercontent.com/openai/robogym/9ff1111fd557b1a01911d7d8c9d59a453071c96e/robogym/envs/dactyl/locked.py",
+      "sha256": "8ead9c2c99eed4da2b558771e9bdf6e10ebd4fa3a077c8055578bfda2bd7e197",
+      "bytes": 11793
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-11-16T06:33:19.996833+00:00",
+  "all_frames_decode": true,
+  "embedded_matches_mp4": true,
+  "play_pause_seek": true,
+  "playback": {
+    "duration": 24.05,
+    "width": 1280,
+    "height": 800,
+    "error": null
+  },
+  "page_errors": [],
+  "mobile_no_horizontal_overflow": true,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 800,
+        "r_frame_rate": "20/1",
+        "nb_frames": "481"
+      }
+    ],
+    "format": {
+      "duration": "24.050000"
+    }
+  }
+}

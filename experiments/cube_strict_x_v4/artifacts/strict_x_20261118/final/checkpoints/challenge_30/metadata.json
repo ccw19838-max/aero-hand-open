@@ -1,0 +1,41 @@
+{
+  "schema": "strict_x_rollout_1",
+  "task": "x90_strict_support",
+  "arm": "v4",
+  "stage": 30.0,
+  "profile": {
+    "name": "thumb_pinky_three_support_v3",
+    "learning_rate": 0.0001,
+    "gamma": 0.999,
+    "entropy": 0.001,
+    "action_fraction": 0.02,
+    "contact_weight": 1.0,
+    "loss_weight": 1.0,
+    "loss_grace": 0.15,
+    "pressure_potential_gain": 0.5,
+    "stall_weight": 0.5,
+    "progress_gain": 20.0,
+    "grip_mix": 0.0,
+    "bc_weight": 0.0
+  },
+  "reason": "validation",
+  "created_at": "2026-11-18T21:45:56.492465+00:00",
+  "training_steps": 12984320,
+  "ppo_training_epochs": 50720,
+  "rollout_count": 12680,
+  "observation_size": 149,
+  "job_sha256": "8a1892767903531073a11708e497ecc6143a9a20646474529e429e62350c1d38",
+  "deadline_at": "2026-11-19T02:55:48.028671+00:00",
+  "implementation_sha256": "b7e7688faaf84626f12c37d9f2be86b735f91661887214edaf0be751b56a561a",
+  "input_sha256": "12c2b6e1e0027b25d418ddf20ca83f24b6529d1dd9ae8f24bc4def340cddbcac",
+  "source_checkpoint": "/workspace/aero-hand-open/experiments/cube_two_driver_v3/artifacts/thumb_pinky_20261117/legacy_source",
+  "source_policy_sha256": "060ffea0836d448efd7b4deed56caec56850e891fc6612284a52217f39f763fd",
+  "files": {
+    "prepare_report.json": "adf4d60e824e895c9b14464801a98d8ac64fcb8c25cd3ac2d37523442e6a7396",
+    "normalizer.pkl": "e5dc67ce8ee8d617a9b1f25f11d6cbbcadec63b427c4a5de02606557efc76c23",
+    "demonstration.npz": "cb903db63dc25231e34a8110a3bdea4a1f10d9133fdbd867a66ef70ea591e2fd",
+    "policy.zip": "9e1f69df16b5afd1852ebcb1f2e0a2c29292991e0c22141559773e283731568f",
+    "cursor.pkl": "38fd0415d42e85453cffea1eb687926dc0c73feb326e2e0a6b2f5cb0f1cc2d3a",
+    "reference.npz": "12c2b6e1e0027b25d418ddf20ca83f24b6529d1dd9ae8f24bc4def340cddbcac"
+  }
+}

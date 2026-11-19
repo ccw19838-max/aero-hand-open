@@ -1,0 +1,19 @@
+{
+  "frozen_at": "2026-11-19T00:55:48.856361+00:00",
+  "job_sha256": "8a1892767903531073a11708e497ecc6143a9a20646474529e429e62350c1d38",
+  "highest_qualified_degrees": 0,
+  "final_quorum": false,
+  "tasks": [
+    {
+      "name": "challenge_30",
+      "target": 30,
+      "source": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v4/checkpoints/step_012984320_b2eaca3037",
+      "seed": 8102000,
+      "episodes": 20,
+      "purpose": "next_stage_diagnostic",
+      "checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/final/checkpoints/challenge_30",
+      "policy_sha256": "9e1f69df16b5afd1852ebcb1f2e0a2c29292991e0c22141559773e283731568f"
+    }
+  ],
+  "resumable_checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v4/checkpoints/step_015213568_062844e2a7"
+}

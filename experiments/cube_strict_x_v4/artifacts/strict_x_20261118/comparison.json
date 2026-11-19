@@ -1,0 +1,1060 @@
+{
+  "validation_seed": 7200000,
+  "pairs": [
+    {
+      "steps": 0,
+      "v3": {
+        "arm": "v3",
+        "target": 5,
+        "steps": 0,
+        "epochs": 0,
+        "counts": [
+          0,
+          0
+        ],
+        "rate": 0.0,
+        "median": 3.510429753586036,
+        "hold": 0.0,
+        "score": [
+          0.0,
+          3.5097949703717353,
+          -2.021404807969714
+        ],
+        "checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v3/checkpoints/step_000000000_88c53863ef",
+        "report": "evaluations/v3_05_000000000.json",
+        "groups": {
+          "0.001": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.5106857140302608,
+            "median_eligible_peak_degrees": 3.5106857140302608,
+            "maximum_eligible_peak_degrees": 3.6109913640273117,
+            "maximum_signed_angle": 3.61099318519132,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 2.0211319374929166,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.311325364085392,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.955,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.04534830165509977,
+              "pinky": 0.005745387892206405
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 9.66945294352087e-05,
+              "pinky": 0.0007886151497888831
+            }
+          },
+          "0.002": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.5097949703717353,
+            "median_eligible_peak_degrees": 3.5097949703717353,
+            "maximum_eligible_peak_degrees": 3.610282931405846,
+            "maximum_signed_angle": 3.6102894113065855,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 2.0216776784465096,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.3123669181020587,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.955,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.04507433175184385,
+              "pinky": 0.005770554698286516
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 9.63284135887472e-05,
+              "pinky": 0.0007915509766720408
+            }
+          }
+        }
+      },
+      "v4": {
+        "arm": "v4",
+        "target": 5,
+        "steps": 0,
+        "epochs": 0,
+        "counts": [
+          0,
+          0
+        ],
+        "rate": 0.0,
+        "median": 3.510429753586036,
+        "hold": 0.0,
+        "score": [
+          0.0,
+          3.5097949703717353,
+          -2.021404807969714
+        ],
+        "checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v4/checkpoints/step_000000000_4a01e730da",
+        "report": "evaluations/v4_05_000000000.json",
+        "groups": {
+          "0.001": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.5106857140302608,
+            "median_eligible_peak_degrees": 3.5106857140302608,
+            "maximum_eligible_peak_degrees": 3.6109913640273117,
+            "maximum_signed_angle": 3.61099318519132,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 2.0211319374929166,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.311325364085392,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.955,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.04534830165509977,
+              "pinky": 0.005745387892206405
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 9.66945294352087e-05,
+              "pinky": 0.0007886151497888831
+            }
+          },
+          "0.002": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.5097949703717353,
+            "median_eligible_peak_degrees": 3.5097949703717353,
+            "maximum_eligible_peak_degrees": 3.610282931405846,
+            "maximum_signed_angle": 3.6102894113065855,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 2.0216776784465096,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.3123669181020587,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.955,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.04507433175184385,
+              "pinky": 0.005770554698286516
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 9.63284135887472e-05,
+              "pinky": 0.0007915509766720408
+            }
+          }
+        }
+      }
+    },
+    {
+      "steps": 4096,
+      "v3": {
+        "arm": "v3",
+        "target": 5,
+        "steps": 4096,
+        "epochs": 16,
+        "counts": [
+          0,
+          0
+        ],
+        "rate": 0.0,
+        "median": 3.519664750005599,
+        "hold": 0.0,
+        "score": [
+          0.0,
+          3.5195875688752625,
+          -1.9317619710128011
+        ],
+        "checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v3/checkpoints/step_000004096_2d121a4298",
+        "report": "evaluations/v3_05_000004096.json",
+        "groups": {
+          "0.001": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.519664750005599,
+            "median_eligible_peak_degrees": 3.519664750005599,
+            "maximum_eligible_peak_degrees": 3.698777646878816,
+            "maximum_signed_angle": 3.7021383309668714,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 1.9302033299770236,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.3736574341802816,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.99,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.04637136852551559,
+              "pinky": 0.0053990256614395975
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 0.0,
+              "pinky": 0.0008541093990547613
+            }
+          },
+          "0.002": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.5195875688752625,
+            "median_eligible_peak_degrees": 3.5195875688752625,
+            "maximum_eligible_peak_degrees": 3.694085564943577,
+            "maximum_signed_angle": 3.694085564943577,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 1.9333206120485784,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.369183360614745,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.99,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.0467503887131874,
+              "pinky": 0.005172396290006067
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 6.180630012894072e-06,
+              "pinky": 0.0008540095616961171
+            }
+          }
+        }
+      },
+      "v4": {
+        "arm": "v4",
+        "target": 5,
+        "steps": 4096,
+        "epochs": 16,
+        "counts": [
+          0,
+          0
+        ],
+        "rate": 0.0,
+        "median": 3.4864060708762556,
+        "hold": 0.0,
+        "score": [
+          0.0,
+          3.4860919965329202,
+          -1.943722018673661
+        ],
+        "checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v4/checkpoints/step_000004096_37a9aca8d6",
+        "report": "evaluations/v4_05_000004096.json",
+        "groups": {
+          "0.001": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.4869047286193373,
+            "median_eligible_peak_degrees": 3.4869047286193373,
+            "maximum_eligible_peak_degrees": 3.5893865717678266,
+            "maximum_signed_angle": 3.5893865717678266,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 1.9436768992414328,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.329671591223901,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.96,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.0456307226159796,
+              "pinky": 0.006083943987434835
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 0.00010679867788203801,
+              "pinky": 0.000732043568019453
+            }
+          },
+          "0.002": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.4860919965329202,
+            "median_eligible_peak_degrees": 3.4860919965329202,
+            "maximum_eligible_peak_degrees": 3.5883566548768133,
+            "maximum_signed_angle": 3.5883566548768133,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 1.9437671381058887,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.3301659996422677,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.96,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.045554352581348434,
+              "pinky": 0.005927102409180424
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 0.00010193050422231391,
+              "pinky": 0.0007360049430954923
+            }
+          }
+        }
+      }
+    },
+    {
+      "steps": 8192,
+      "v3": {
+        "arm": "v3",
+        "target": 5,
+        "steps": 8192,
+        "epochs": 32,
+        "counts": [
+          0,
+          0
+        ],
+        "rate": 0.0,
+        "median": 3.653311794359475,
+        "hold": 0.0,
+        "score": [
+          0.0,
+          3.6501521750140977,
+          -1.9740030609183463
+        ],
+        "checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v3/checkpoints/step_000008192_1488cca67f",
+        "report": "evaluations/v3_05_000008192.json",
+        "groups": {
+          "0.001": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.656522638450605,
+            "median_eligible_peak_degrees": 3.656522638450605,
+            "maximum_eligible_peak_degrees": 3.8369762410653254,
+            "maximum_signed_angle": 3.843105228511305,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 1.971594227789377,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.322449513100222,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.98,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.045076832383120685,
+              "pinky": 0.003866436872235402
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 0.0,
+              "pinky": 0.0009477283698558329
+            }
+          },
+          "0.002": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.6501521750140977,
+            "median_eligible_peak_degrees": 3.6501521750140977,
+            "maximum_eligible_peak_degrees": 3.8383773397467085,
+            "maximum_signed_angle": 3.846857507646912,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 1.976411894047315,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.318814356424639,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.98,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.04452781442904709,
+              "pinky": 0.004009501325160914
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 0.0,
+              "pinky": 0.0009552238961746793
+            }
+          }
+        }
+      },
+      "v4": {
+        "arm": "v4",
+        "target": 5,
+        "steps": 8192,
+        "epochs": 32,
+        "counts": [
+          0,
+          0
+        ],
+        "rate": 0.0,
+        "median": 3.386973227681224,
+        "hold": 0.0,
+        "score": [
+          0.0,
+          3.3863734647616592,
+          -1.9605753219930464
+        ],
+        "checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v4/checkpoints/step_000008192_b6886a143c",
+        "report": "evaluations/v4_05_000008192.json",
+        "groups": {
+          "0.001": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.387818949342308,
+            "median_eligible_peak_degrees": 3.387818949342308,
+            "maximum_eligible_peak_degrees": 3.537381237246361,
+            "maximum_signed_angle": 3.537396978000074,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 1.9586060277865944,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.2306531018512734,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.94,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.04211077441376487,
+              "pinky": 0.007070592909294318
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 0.00011979909326590899,
+              "pinky": 0.000621114347203922
+            }
+          },
+          "0.002": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.3863734647616592,
+            "median_eligible_peak_degrees": 3.3863734647616592,
+            "maximum_eligible_peak_degrees": 3.53616327789598,
+            "maximum_signed_angle": 3.5362048862976794,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 1.9625446161994975,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.2228845906091523,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.94,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.04183039813221365,
+              "pinky": 0.007175533194372865
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 3.0635137809926726e-05,
+              "pinky": 0.0006223480304754405
+            }
+          }
+        }
+      }
+    },
+    {
+      "steps": 16384,
+      "v3": {
+        "arm": "v3",
+        "target": 5,
+        "steps": 16384,
+        "epochs": 64,
+        "counts": [
+          0,
+          0
+        ],
+        "rate": 0.0,
+        "median": 3.963969834783371,
+        "hold": 0.0,
+        "score": [
+          0.0,
+          3.9617275105451357,
+          -1.617118555373441
+        ],
+        "checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v3/checkpoints/step_000016384_7307b48605",
+        "report": "evaluations/v3_05_000016384.json",
+        "groups": {
+          "0.001": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.9663706747545535,
+            "median_eligible_peak_degrees": 3.9663706747545535,
+            "maximum_eligible_peak_degrees": 4.148909878606993,
+            "maximum_signed_angle": 4.1490631752643194,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 1.6187451888589952,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.5085152189895776,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 2.09,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.045177808600335684,
+              "pinky": 0.003143459254301632
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 0.0,
+              "pinky": 0.0015218773502287865
+            }
+          },
+          "0.002": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.9617275105451357,
+            "median_eligible_peak_degrees": 3.9617275105451357,
+            "maximum_eligible_peak_degrees": 4.146623178794782,
+            "maximum_signed_angle": 4.146794821678405,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 1.6154919218878874,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.506936384742903,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 2.085,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.04519083130059276,
+              "pinky": 0.0031336691015227958
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 0.0,
+              "pinky": 0.001532578394397242
+            }
+          }
+        }
+      },
+      "v4": {
+        "arm": "v4",
+        "target": 5,
+        "steps": 16384,
+        "epochs": 64,
+        "counts": [
+          0,
+          0
+        ],
+        "rate": 0.0,
+        "median": 3.5348828759168214,
+        "hold": 0.0,
+        "score": [
+          0.0,
+          3.534782394828269,
+          -1.681728791369188
+        ],
+        "checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v4/checkpoints/step_000016384_d771a7008f",
+        "report": "evaluations/v4_05_000016384.json",
+        "groups": {
+          "0.001": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.534782394828269,
+            "median_eligible_peak_degrees": 3.534782394828269,
+            "maximum_eligible_peak_degrees": 3.638374160807736,
+            "maximum_signed_angle": 3.638483839751099,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 1.6802332168717329,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.4690932398414445,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.94,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.04467095209224008,
+              "pinky": 0.0065241553046633625
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 7.974489457815651e-05,
+              "pinky": 0.0006239861505393761
+            }
+          },
+          "0.002": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 3.53498447200524,
+            "median_eligible_peak_degrees": 3.53498447200524,
+            "maximum_eligible_peak_degrees": 3.638118070684842,
+            "maximum_signed_angle": 3.6382683745301083,
+            "maximum_stable_seconds": 0.0,
+            "mean_best_error": 1.6832243658666435,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.4683274023242783,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 1.94,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.04474034267617173,
+              "pinky": 0.006396444103307778
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 8.268730965279913e-05,
+              "pinky": 0.0006249697584589154
+            }
+          }
+        }
+      }
+    },
+    {
+      "steps": 32768,
+      "v3": {
+        "arm": "v3",
+        "target": 5,
+        "steps": 32768,
+        "epochs": 128,
+        "counts": [
+          0,
+          0
+        ],
+        "rate": 0.0,
+        "median": 4.658784116214139,
+        "hold": 0.3000000000000001,
+        "score": [
+          0.0,
+          4.656535405390679,
+          -0.7737214657898567
+        ],
+        "checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v3/checkpoints/step_000032768_706cae99e0",
+        "report": "evaluations/v3_05_000032768.json",
+        "groups": {
+          "0.001": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 4.656535405390679,
+            "median_eligible_peak_degrees": 4.656535405390679,
+            "maximum_eligible_peak_degrees": 5.289111704470799,
+            "maximum_signed_angle": 5.6036562671375725,
+            "maximum_stable_seconds": 0.3000000000000001,
+            "mean_best_error": 0.7739190293375915,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 10,
+              "middle": 10,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.41189051795783,
+              "middle": 4.913916689311134,
+              "ring": null
+            },
+            "median_first_violation_seconds": 2.575,
+            "warning_count": 33,
+            "warning_false_count": 11,
+            "warning_censored_count": 0,
+            "warning_matched_count": 22,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.08415476300771868,
+              "pinky": 0.00036285581632041104
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 0.0,
+              "pinky": 0.009289408238635591
+            }
+          },
+          "0.002": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 4.661375346344244,
+            "median_eligible_peak_degrees": 4.661375346344244,
+            "maximum_eligible_peak_degrees": 5.277245273294249,
+            "maximum_signed_angle": 5.595827361089183,
+            "maximum_stable_seconds": 0.3000000000000001,
+            "mean_best_error": 0.7735239022421216,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 11,
+              "middle": 9,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 3.440796224660243,
+              "middle": 4.850719071050509,
+              "ring": null
+            },
+            "median_first_violation_seconds": 2.575,
+            "warning_count": 33,
+            "warning_false_count": 11,
+            "warning_censored_count": 0,
+            "warning_matched_count": 22,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.08456318432146387,
+              "pinky": 0.0003404202405278963
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 0.0,
+              "pinky": 0.009328099014104228
+            }
+          }
+        }
+      },
+      "v4": {
+        "arm": "v4",
+        "target": 5,
+        "steps": 32768,
+        "epochs": 128,
+        "counts": [
+          0,
+          0
+        ],
+        "rate": 0.0,
+        "median": 4.539341365570333,
+        "hold": 0.2700000000000001,
+        "score": [
+          0.0,
+          4.538502615202113,
+          -0.6890491009957828
+        ],
+        "checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v4/checkpoints/step_000032768_b64afa4039",
+        "report": "evaluations/v4_05_000032768.json",
+        "groups": {
+          "0.001": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 4.538502615202113,
+            "median_eligible_peak_degrees": 4.538502615202113,
+            "maximum_eligible_peak_degrees": 4.689666355772562,
+            "maximum_signed_angle": 4.804333375199721,
+            "maximum_stable_seconds": 0.2700000000000001,
+            "mean_best_error": 0.6905862602024451,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 4.549955579240211,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 2.16,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.0768183550053795,
+              "pinky": 0.004450587163643221
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 0.0,
+              "pinky": 0.0015751773785827497
+            }
+          },
+          "0.002": {
+            "trials": 20,
+            "requested_trials": 20,
+            "successes": 0,
+            "success_rate": 0.0,
+            "complete": true,
+            "failures": {
+              "support_out_of_range": 20
+            },
+            "median_valid_peak_degrees": 4.5422769248964485,
+            "median_eligible_peak_degrees": 4.5422769248964485,
+            "maximum_eligible_peak_degrees": 4.69043851439433,
+            "maximum_signed_angle": 4.80348174460414,
+            "maximum_stable_seconds": 0.2700000000000001,
+            "mean_best_error": 0.6875119417891206,
+            "first_violation_episodes": 20,
+            "first_violation_finger_counts": {
+              "index": 20,
+              "middle": 0,
+              "ring": 0
+            },
+            "median_first_violation_angle_by_finger": {
+              "index": 4.553909827969292,
+              "middle": null,
+              "ring": null
+            },
+            "median_first_violation_seconds": 2.16,
+            "warning_count": 20,
+            "warning_false_count": 0,
+            "warning_censored_count": 0,
+            "warning_matched_count": 20,
+            "warning_median_lead_ms": 0.0,
+            "median_driver_push_impulse_Nm_s": {
+              "thumb": 0.0771246384248512,
+              "pinky": 0.004485412823574562
+            },
+            "median_driver_counter_impulse_Nm_s": {
+              "thumb": 0.0,
+              "pinky": 0.0015841011788459928
+            }
+          }
+        }
+      }
+    }
+  ]
+}

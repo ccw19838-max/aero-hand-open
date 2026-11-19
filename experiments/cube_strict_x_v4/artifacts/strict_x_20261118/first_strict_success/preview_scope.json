@@ -1,0 +1,51 @@
+{
+  "scope": "\u9996\u6b21\u57285\u00b0\u8bfe\u7a0b\u914d\u5bf9\u9a8c\u8bc1\u4e2d\u51fa\u73b0\u7684\u4e25\u683c\u6210\u529f\u6837\u4f8b\u3002\u9009\u62e91 ms\u6210\u529f\u56de\u5408\uff1b\u4e24\u79cd\u6b65\u957f\u7684\u6210\u529f\u5747\u6765\u81ea\u540c\u4e00\u4e2a\u9a8c\u8bc1\u521d\u6001\u3002",
+  "validation_file": "evaluations/v4_05_000305152.json",
+  "validation_sha256": "f77a37923039ad3b36b01caaac9e9dd705ec2a0b9d137a377af87a9f9efe2ad2",
+  "checkpoint": "/workspace/aero-hand-open/experiments/cube_strict_x_v4/artifacts/strict_x_20261118/arms/v4/checkpoints/step_000305152_9dccd8d716",
+  "training_steps": 305152,
+  "target_degrees": 5.0,
+  "arm": "v4",
+  "seed": 7200013,
+  "dt": 0.001,
+  "policy_sha256": "f6edfb6a79fe0346162a9285409c71ea937359d90839e58d8b16886bc984a483",
+  "video_sha256": "a72370fea42620022d097fefa8d30505f57a33496d253303c79cb4b33abbe077",
+  "strict_success": true,
+  "first_violation": null,
+  "eligible_peak_degrees": 5.58149203678882,
+  "final_angle_degrees": 5.58149203678882,
+  "final_pose_error_degrees": 1.0050236387395968,
+  "qualified_hold_seconds": 1.0000000000000007,
+  "final_finger_forces_N": [
+    4.912128074123891,
+    1.4896108144701534,
+    0.16951617565050714,
+    4.14661672369153,
+    0.7836613982088546
+  ],
+  "grouped_strict_successes": {
+    "0.001": 1,
+    "0.002": 1
+  },
+  "trials_per_step": 20,
+  "raw_task_return": 90.73978687712494,
+  "training_worker_raw_rewards_exact": true,
+  "control_cycles": 49,
+  "media_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 608,
+        "r_frame_rate": "20/1",
+        "nb_frames": "70"
+      }
+    ],
+    "format": {
+      "duration": "3.500000"
+    }
+  },
+  "all_frames_decoded": true
+}

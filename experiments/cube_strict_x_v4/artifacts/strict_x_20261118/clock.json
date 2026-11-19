@@ -1,0 +1,7 @@
+{
+  "started_at": "2026-11-18T02:55:48.028671+00:00",
+  "deadline_at": "2026-11-19T02:55:48.028671+00:00",
+  "source": "/workspace/aero-hand-open/experiments/cube_two_driver_v3/artifacts/thumb_pinky_20261117/legacy_source",
+  "policy_sha256": "060ffea0836d448efd7b4deed56caec56850e891fc6612284a52217f39f763fd",
+  "reference_sha256": "12c2b6e1e0027b25d418ddf20ca83f24b6529d1dd9ae8f24bc4def340cddbcac"
+}

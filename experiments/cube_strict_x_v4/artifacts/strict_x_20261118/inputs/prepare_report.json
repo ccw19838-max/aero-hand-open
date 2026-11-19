@@ -1,0 +1,144 @@
+{
+  "approved": true,
+  "task": "cube_envelope_xyz90_v1",
+  "config": {
+    "schema_version": 1,
+    "cube_size": 0.057,
+    "cube_mass": 0.077966253,
+    "cube_friction": 0.6,
+    "sim_dt": 0.002,
+    "ctrl_dt": 0.05,
+    "solver_iterations": 20,
+    "episode_seconds": 12.0,
+    "hold_seconds": 0.5,
+    "contact_force": 0.02,
+    "min_fingers": 5,
+    "grip_velocity": 0.03,
+    "grip_omega": 0.5,
+    "max_displacement": 0.08,
+    "max_penetration": 0.001,
+    "violation_seconds": 0.1,
+    "action_delta_fraction": 0.01,
+    "reset_position_noise": 0.001,
+    "reset_angle_noise_degrees": 2.0,
+    "reset_max_penetration": 0.001,
+    "reset_max_attempts": 32,
+    "mass_randomization": 0.1,
+    "friction_randomization": 0.1,
+    "render_width": 960,
+    "render_height": 720,
+    "task": "fixed_hand_xyz_reorient_v1",
+    "goal_frame": "hand_fixed",
+    "target_degrees": 90.0,
+    "target_hold_seconds": 0.5,
+    "angle_tolerance_degrees": 10.0,
+    "progress_reward": 5.0,
+    "near_goal_reward": 0.5,
+    "stable_reward": 2.0,
+    "variant": "four_finger_envelope_v1",
+    "task_mode": "reorient",
+    "capture_seconds": 0.5,
+    "capture_timeout": 2.0,
+    "grip_hold_seconds": 2.0,
+    "max_no_finger_contact_seconds": 0.15,
+    "envelope_contact_reward": 0.5,
+    "envelope_stable_reward": 2.0,
+    "thumb_contact_reward": 0.1,
+    "thumb_force_soft_limit": 20.0,
+    "thumb_force_penalty": 0.005
+  },
+  "model_fingerprint": "bf11d9c6137dc1634ccbf26152912b4b9fca018a0cb28b43c8fb9de48d91a1e7",
+  "construction": {
+    "method": "independent_free_validation_of_candidate",
+    "source": "/workspace/aero-hand-open/experiments/cube_envelop/artifacts/search/success_settled.npz",
+    "source_sha256": "12c2b6e1e0027b25d418ddf20ca83f24b6529d1dd9ae8f24bc4def340cddbcac"
+  },
+  "scope": "Five-finger envelope feasibility, not learned rotation or grasp performance",
+  "numerical_checks": {
+    "0.002": {
+      "passed": true,
+      "seconds": 2.999999999999891,
+      "stable_at_end": 2.999999999999891,
+      "best_stable_seconds": 2.999999999999891,
+      "five_contact_at_end": 2.999999999999891,
+      "initial_penetration": 0.0006792782079859839,
+      "initial_forces": [
+        15.921665515207891,
+        3.787682408546168,
+        3.864651125824814,
+        6.789280539937997,
+        2.361993460699633
+      ],
+      "final_forces": [
+        14.952683158991864,
+        5.061759162844296,
+        3.6607670701530797,
+        7.600238170495873,
+        2.2482597511347735
+      ],
+      "last_second_min_forces": [
+        14.94986757544141,
+        4.635870753636214,
+        3.5917351456915716,
+        6.756917108086244,
+        2.230884979696134
+      ],
+      "peak_penetration": 0.0006981158994602914,
+      "longest_penetration_seconds": 0.0,
+      "failure_reason": null,
+      "final_position": [
+        0.10447853650879903,
+        0.003212059748755003,
+        0.17821844135947282
+      ]
+    },
+    "0.001": {
+      "passed": true,
+      "seconds": 2.9999999999997806,
+      "stable_at_end": 2.9999999999997806,
+      "best_stable_seconds": 2.9999999999997806,
+      "five_contact_at_end": 2.9999999999997806,
+      "initial_penetration": 0.0006792782079859839,
+      "initial_forces": [
+        15.921665515207891,
+        3.787682408546168,
+        3.864651125824814,
+        6.789280539937997,
+        2.361993460699633
+      ],
+      "final_forces": [
+        14.952460453429516,
+        5.061467503074221,
+        3.6602514803476716,
+        7.600336832114481,
+        2.248078098189038
+      ],
+      "last_second_min_forces": [
+        14.94971983627437,
+        4.635754309754132,
+        3.5910899885472345,
+        6.7563624507171784,
+        2.230981179227716
+      ],
+      "peak_penetration": 0.0006981183282716141,
+      "longest_penetration_seconds": 0.0,
+      "failure_reason": null,
+      "final_position": [
+        0.10447973665578687,
+        0.0032103608781593337,
+        0.1782169144003089
+      ]
+    }
+  },
+  "final_position_difference": 2.5803329981871237e-06,
+  "force_order": [
+    "thumb",
+    "index",
+    "middle",
+    "ring",
+    "pinky"
+  ],
+  "contact_rule": "Every finger >=0.02 N; final low-speed stability >=0.5s; all five contact for final >=1s",
+  "penetration_rule": "Depth<=1mm for stability; >1mm continuously for 0.1s fails; peaks retained",
+  "reference_sha256": "12c2b6e1e0027b25d418ddf20ca83f24b6529d1dd9ae8f24bc4def340cddbcac"
+}

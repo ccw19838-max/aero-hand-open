@@ -151,6 +151,7 @@ We offer reinforcement learning tools built on top of state-of-the-art framework
 Refer to the [RL and Sim](https://docs.tetheria.ai/docs/hand_sim) documentation and the [`sim_rl/mujoco_playground/`](./sim_rl/mujoco_playground/) directory for full setup instructions and training procedures.  
 An example of deploying trained policies in ROS is also provided in the [`ros2/`](./ros2/) directory.
 
+For this branch's X-axis cube flip experiment, see the [GPU continuation guide](./experiments/cube_strict_x_v4/GPU_HANDOFF.md). It lists the retained X and Y checkpoints and the commands for resuming PPO on a new machine.
 
 # Getting help
 

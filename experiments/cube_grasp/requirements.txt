@@ -1,0 +1,11 @@
+# CPU wheel index is required to avoid downloading CUDA libraries.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.6.0+cpu
+numpy==1.26.4
+mujoco==3.3.6
+gymnasium==1.1.1
+stable-baselines3==2.6.0
+scipy==1.15.3
+imageio==2.38.0
+imageio-ffmpeg==0.8.1
+pillow==12.3.0

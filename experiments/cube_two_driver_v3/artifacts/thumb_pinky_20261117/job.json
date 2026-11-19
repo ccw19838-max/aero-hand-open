@@ -1,0 +1,134 @@
+{
+  "task": "x_thumb_pinky_three_support_v3",
+  "root": "/workspace/aero-hand-open/experiments/cube_two_driver_v3/artifacts/thumb_pinky_20261117",
+  "source_checkpoint": "/workspace/aero-hand-open/experiments/cube_two_driver_v3/artifacts/thumb_pinky_20261117/legacy_source",
+  "profile": {
+    "name": "thumb_pinky_three_support_v3",
+    "learning_rate": 0.0001,
+    "gamma": 0.999,
+    "entropy": 0.001,
+    "action_fraction": 0.02,
+    "contact_weight": 1.0,
+    "loss_weight": 1.0,
+    "loss_grace": 0.15,
+    "pressure_potential_gain": 0.5,
+    "stall_weight": 0.5,
+    "progress_gain": 20.0,
+    "grip_mix": 0.0,
+    "bc_weight": 0.0
+  },
+  "started_at": "2026-11-17T08:37:45.888207+00:00",
+  "deadline_at": "2026-11-18T06:15:26.111782+00:00",
+  "original_budget_started_at": "2026-11-17T06:15:26.111782+00:00",
+  "previous_experiment": "/workspace/aero-hand-open/experiments/cube_contact_recovery_v2/artifacts/recovery_20261117_v2",
+  "budget_policy": "Continue remaining original 24h window including pause and preparation; no deadline reset",
+  "physics_timesteps": [
+    0.001,
+    0.002,
+    0.001,
+    0.002
+  ],
+  "initial_stage": 5.0,
+  "rollout_steps": 256,
+  "initial_action_mean": [
+    0.0,
+    0.0,
+    0.0,
+    0.15,
+    -0.15,
+    0.0,
+    0.0
+  ],
+  "initial_std": [
+    0.04,
+    0.04,
+    0.04,
+    0.12,
+    0.12,
+    0.08,
+    0.08
+  ],
+  "max_std": [
+    0.1,
+    0.1,
+    0.1,
+    0.2,
+    0.2,
+    0.15,
+    0.15
+  ],
+  "seed": 6300000,
+  "validation_seed": 6400000,
+  "review_seed": 6500000,
+  "final_seed": 6600000,
+  "initial_eval_episodes": 20,
+  "save_seconds": 300.0,
+  "eval_seconds": 1800.0,
+  "review_seconds": 10800.0,
+  "final_goal": "Original initial grasp X+90\u00b15deg and full orientation error<=5deg, all five fingers loaded and low speeds for1s; 100/100 at dt1ms and2ms. Named index/middle/ring support condition enforced during motion.",
+  "static_hold_validation": [
+    {
+      "task": "x_thumb_pinky_three_support_v3",
+      "target_degrees": 0.0,
+      "from_original_initial_grasp": true,
+      "complete": true,
+      "groups": {
+        "0.001": {
+          "trials": 20,
+          "requested_trials": 20,
+          "successes": 20,
+          "success_rate": 1.0,
+          "complete": true,
+          "failures": {}
+        },
+        "0.002": {
+          "trials": 20,
+          "requested_trials": 20,
+          "successes": 20,
+          "success_rate": 1.0,
+          "complete": true,
+          "failures": {}
+        }
+      },
+      "success_rate": 1.0,
+      "mean_best_error": 1.1272107730978202e-15,
+      "three_support_duty": 1.0,
+      "five_finger_duty": 1.0,
+      "maximum_signed_angle": 0.43734283072347635,
+      "maximum_supported_angle": 0.43734283072347635,
+      "maximum_stable_seconds": 1.0000000000000007
+    },
+    {
+      "task": "x_thumb_pinky_three_support_v3",
+      "target_degrees": 0.0,
+      "from_original_initial_grasp": true,
+      "complete": true,
+      "groups": {
+        "0.001": {
+          "trials": 20,
+          "requested_trials": 20,
+          "successes": 20,
+          "success_rate": 1.0,
+          "complete": true,
+          "failures": {}
+        },
+        "0.002": {
+          "trials": 20,
+          "requested_trials": 20,
+          "successes": 20,
+          "success_rate": 1.0,
+          "complete": true,
+          "failures": {}
+        }
+      },
+      "success_rate": 1.0,
+      "mean_best_error": 1.2756420984661743e-15,
+      "three_support_duty": 1.0,
+      "five_finger_duty": 1.0,
+      "maximum_signed_angle": 0.3238777700115427,
+      "maximum_supported_angle": 0.3238777700115427,
+      "maximum_stable_seconds": 1.0000000000000007
+    }
+  ],
+  "preserved_y_manifest": "/workspace/aero-hand-open/experiments/preserved_policies/y90_best_20261116_155308/manifest.json"
+}
